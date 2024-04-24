@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>comsumo combustível</title>
+</head>
+<body>
+	 <!--
+	 	Dado o seguinte problema, resolva a equação: 
+	 	um carro bicombustivel cujo tanque tem capacidade para 45 litros
+	 	de combustivel percorreu 627 Km com um tanque cheio de gasolina,
+	 	porem abastecido por completo com alcool percorreu 497 km 
+	 	o valor do Litro da gasolina é R$ 5,92 e do alcool R$ 4,87.
+
+	 	determine quantos kilometros é possivel percorrer com um litro de cada combustivel, qual o valor total para 
+	 	abastecer o carro com cada tipo de combustivel e identifique que combustivel é finaceiramente mais economico.
+
+	 	Dicas ultilizem vairiaveis para executar as equaçoes.
+	 -->
+
+<script type="text/javascript">
+
+		var tanque	= 45;
+
+		var kmgas = 627;
+
+		var kmalc = 497;
+
+	document.write("litro de gasolina gasto por km: " + kmgas / tanque + "<br>");
+	document.write("litro de alcool gasto por km: " + kmalc / tanque.tofixed() + "<br>");
+
+</script>
+<script type="text/javascript">
+	
+	var gasolina = 5.92;
+
+	var Lgas = 13.93;
+
+	var alcool = 4.87;
+
+	var Lalcool = 11.04;
+
+</script>
+
+<script type="text/javascript">
+	
+document.write("valor para encher o tanque com gasolina: "+ gasolina * tanque + "<br>");
+document.write("valor para encher o tanque com alcool: " + alcool * tanque + "<br>");
+
+var Fullgas = 266.84;
+
+var fullalc = 219.15;
+
+</script>
+
+<script type="text/javascript">
+	
+var custoKMG = (gasolina / Lgas);
+var custoKMA = (alcool / Lalcool);
+
+document.write("o custo do Km por gasolina: " + custoKMG + "<br>");
+
+document.write("o custo do Km por alcool: " + custoKMA + "<br>");
+
+function economia() {
+	if (custoKMG > custoKMA) {
+		document.write("alcool é mais economico!");
+        } else {
+         document.write("gasolina é mais economico!");
+	}
+}
+ economia();
+
+</script>
+
+</body>
+</html>
